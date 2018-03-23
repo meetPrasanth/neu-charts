@@ -1,9 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { colorSets } from '@swimlane/ngx-charts/release/utils';
 
 @Component({
   selector: 'neu-charts-pie',
   templateUrl: './pie-chart.component.html',
-  styleUrls: ['./pie-chart.component.css']
+  styleUrls: ['./pie-chart.component.scss']
 })
 export class PieChartComponent implements OnInit {
     
@@ -12,11 +13,7 @@ export class PieChartComponent implements OnInit {
   // options
   showLegend = true;
 
-  colorScheme = {
-    domain: [
-        '#9896F8', '#81DD98', '#76B3F9', '#05668D', '#2E2E2E', '#FDBD2D', '#FC8A25', '#FA4F1E', '#FA141B', '#BA38D1'
-      ]
-  };
+  colorScheme = colorSets.find(s => s.name == 'forest');
 
   // pie
   showLabels = true;
