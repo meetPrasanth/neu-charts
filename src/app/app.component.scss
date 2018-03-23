@@ -1,8 +1,13 @@
 
 
-.card {
-    width: 500px;
-    height: 400px;
-    padding: 5px;
-    border: 1px solid grey;
+.card-container {
+    display: flex;
+
+    .card {
+        margin: 10px;
+        width: 500px;
+        height: 400px;
+        padding: 5px;
+        border: 1px solid grey;
+    }
 }
