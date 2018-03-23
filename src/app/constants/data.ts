@@ -10,6 +10,38 @@ export var single = [
     {
       "name": "France",
       "value": 7200000
+    },
+    {
+      "name": "India",
+      "value": 8940000
+    },
+    {
+      "name": "Pakistan",
+      "value": 5000000
+    },
+    {
+      "name": "Singapore",
+      "value": 7200000
+    },
+    {
+      "name": "Malaysia",
+      "value": 8940000
+    },
+    {
+      "name": "China",
+      "value": 5000000
+    },
+    {
+      "name": "Japan",
+      "value": 7200000
+    },
+    {
+      "name": "London",
+      "value": 5000000
+    },
+    {
+      "name": "Italy",
+      "value": 7200000
     }
   ];
   

@@ -12,7 +12,7 @@ export class AppComponent {
   multi: any[] = [];
 
   constructor() {
-    //   this.single = single;
+      this.single = single;
       this.multi = multi;
       console.log(this.single);
   }
