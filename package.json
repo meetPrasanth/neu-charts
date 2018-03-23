@@ -13,6 +13,10 @@
   },
   "private": false,
   "dependencies": {
+    "@swimlane/ngx-charts": "^7.1.1",
+    "d3": "^4.13.0"
+  },
+  "devDependencies": {
     "@angular/animations": "^5.1.0",
     "@angular/common": "^5.1.0",
     "@angular/compiler": "^5.1.0",
@@ -22,13 +26,9 @@
     "@angular/platform-browser": "^5.1.0",
     "@angular/platform-browser-dynamic": "^5.1.0",
     "@angular/router": "^5.1.0",
-    "@swimlane/ngx-charts": "^7.1.1",
     "core-js": "^2.4.1",
-    "d3": "^4.13.0",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
-  },
-  "devDependencies": {
+    "zone.js": "^0.8.19",
     "@angular/cli": "1.7.3",
     "@angular/compiler-cli": "^5.1.0",
     "@angular/language-service": "^5.1.0",
