@@ -1,3 +1,16 @@
-<p>
-  neu-charts works!
-</p>
+<div>{{data}}</div>
+<div *ngIf="data && (data.length > 0)">
+<ngx-charts-pie-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="data"
+      [legend]="showLegend"
+      [explodeSlices]="explodeSlices"
+      [labels]="showLabels"
+      [doughnut]="doughnut"
+      [gradient]="gradient">
+    </ngx-charts-pie-chart>
+</div>
+<div *ngIf="(!data) || (data.length <= 0)">
+    No data
+</div>

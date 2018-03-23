@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 
@@ -12,6 +13,7 @@ import { NeuChartsModule } from './modules/neu-charts/neu-charts.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NeuChartsModule
   ],
   providers: [],
