@@ -9,6 +9,4 @@
         [gradient]="gradient">
         </ngx-charts-pie-chart>
 </div>
-<div *ngIf="(!data) || (data.length <= 0)">
-    No data
-</div>
+<no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

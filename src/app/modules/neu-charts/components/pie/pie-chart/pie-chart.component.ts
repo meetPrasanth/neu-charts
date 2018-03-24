@@ -23,7 +23,7 @@ export class PieChartComponent implements OnInit {
 
   ngOnInit() {
       
-    console.log("init",this.options, this.customOptions);
+    console.log("init",this.options, this.customOptions, this.data);
     Object.assign(this.options, this.customOptions);
     console.log("aft",this.options, this.customOptions);
   }
