@@ -22,9 +22,7 @@ export class DonutChartComponent implements OnInit {
 
     constructor() { }
 
-    ngOnInit() {
-        console.log(this.options, this.cutomOptions);
-        
+    ngOnInit() {   
         Object.assign(this.options, this.cutomOptions);
     }
 

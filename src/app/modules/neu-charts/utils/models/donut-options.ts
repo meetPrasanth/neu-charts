@@ -9,7 +9,7 @@ export class DonutOptions extends PieOptions{
 
     arcWidth: number;
 
-    constructor(showLegend = true, showLabels = true, arcWidth = 0.25) {
+    constructor(showLegend = true, showLabels = true, arcWidth = 0.3) {
         super(showLegend, showLabels, false);
         this.doughnut = true;
         this.arcWidth = arcWidth;
