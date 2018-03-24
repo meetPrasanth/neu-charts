@@ -1,0 +1,36 @@
+
+.chart-container {
+    width: 100%;
+    height: 100%;
+
+    /deep/ .total-value {
+        font-size: 1.4rem;
+    }
+
+    /deep/ .total-label {
+        font-size: 1.2rem;
+    }
+
+    /deep/ .legend-items {
+        padding-top: 10px;
+
+        .legend-item {
+            line-height: 1.4;
+            opacity: 0.75;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            .item-value {
+                font-size: 1.2rem !important;
+            }
+
+            .item-percent {
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+
+    
+}

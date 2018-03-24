@@ -1,0 +1,9 @@
+<div class="chart-container" *ngIf="data && (data.length > 0)">
+    <ngx-charts-advanced-pie-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="data"
+        [gradient]="gradient">
+        </ngx-charts-advanced-pie-chart>
+</div>
+<no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

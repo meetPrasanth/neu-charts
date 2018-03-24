@@ -12,7 +12,7 @@ export class AppComponent {
   multi: any[] = [];
 
   options = {
-    showLegend: false
+    showLegend: true
   }
 
   donutOptions = {
