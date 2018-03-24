@@ -11,6 +11,14 @@ export class AppComponent {
   single: any[] = [];
   multi: any[] = [];
 
+  options = {
+    showLegend: false
+  }
+
+  donutOptions = {
+      arcWidth: 0.3
+  }
+
   constructor() {
       this.single = single;
       this.multi = multi;
