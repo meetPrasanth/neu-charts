@@ -16,10 +16,10 @@
 
         .legend-item {
             line-height: 1.4;
-            opacity: 0.75;
+            // opacity: 0.75;
 
             &:hover {
-                opacity: 1;
+                opacity: 0.75;
             }
 
             .item-value {
