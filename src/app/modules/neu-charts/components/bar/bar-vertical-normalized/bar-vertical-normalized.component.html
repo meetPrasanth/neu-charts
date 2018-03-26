@@ -1,0 +1,16 @@
+<div class="chart-container" *ngIf="data && (data.length > 0)">
+    <ngx-charts-bar-vertical-normalized
+      [scheme]="colorScheme"
+      [results]="data"
+      [gradient]="gradient"
+      [xAxis]="options.showXAxis"
+      [yAxis]="options.showYAxis"
+      [legend]="options.showLegend"
+      [showXAxisLabel]="options.showXAxisLabel"
+      [showYAxisLabel]="options.showYAxisLabel"
+      [xAxisLabel]="options.xAxisLabel"
+      [yAxisLabel]="options.yAxisLabel"
+      [barPadding]="options.barPadding">
+    </ngx-charts-bar-vertical-normalized>
+</div>
+<no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

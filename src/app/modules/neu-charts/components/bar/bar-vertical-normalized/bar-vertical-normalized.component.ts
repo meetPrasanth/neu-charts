@@ -3,15 +3,15 @@ import { BarOptions } from '../../../utils/models/bar-options';
 import { customColorSets } from '../../../utils/custom-color-sets';
 
 /**
- * Bar vertical stacked chart
+ * Bar vertical normalized chart
  * @author Prasanth Venkatesan
  */
 @Component({
-  selector: 'neu-charts-bar-vertical-stacked',
-  templateUrl: './bar-vertical-stacked.component.html',
-  styleUrls: ['./bar-vertical-stacked.component.scss']
+  selector: 'neu-charts-bar-vertical-normalized',
+  templateUrl: './bar-vertical-normalized.component.html',
+  styleUrls: ['./bar-vertical-normalized.component.scss']
 })
-export class BarVerticalStackedComponent implements OnInit {
+export class BarVerticalNormalizedComponent implements OnInit {
 
     @Input('data') data: any;
     @Input('options') customOptions: BarOptions;
