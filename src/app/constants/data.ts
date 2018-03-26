@@ -39,10 +39,10 @@ export var single = [
       "name": "London",
       "value": 5000000
     },
-    // {
-    //   "name": "Italy",
-    //   "value": 7200000
-    // }
+    {
+      "name": "Italy",
+      "value": 7200000
+    }
   ];
   
   export var multi = [

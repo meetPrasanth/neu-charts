@@ -17,8 +17,8 @@ export class DonutAdvancedComponent implements OnInit {
 
     colorScheme = customColorSets.find(s => s.name == 'palatte');
 
-    constructor() {}
+    constructor() { }
 
-    ngOnInit() {}
+    ngOnInit() { }
 
 }

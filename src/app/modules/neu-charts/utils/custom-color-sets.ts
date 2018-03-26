@@ -2,6 +2,6 @@
 export let customColorSets = [
     {
         name : 'palatte',
-        domain: [ '#9896F8', '#81DD98', '#76B3F9', '#b867d3', '#4d488c', '#FDBD2D', '#FC8A25', '#FA4F1E', '#05668D']
+        domain: [ '#9896F8', '#55efc4', '#76B3F9', '#81DD98', '#b867d3', '#f26f96', '#ffeaa7', '#FDBD2D', '#FC8A25', '#4d488c', '#FA4F1E', '#BDC3C7']
     }
 ]
