@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { colorSets } from '@swimlane/ngx-charts/release/utils';
 import { PieOptions } from '../../../utils/models/pie-options';
+import { customColorSets } from '../../../utils/custom-color-sets';
 
 /**
  * Pie chart component
@@ -18,9 +19,9 @@ export class PieChartComponent implements OnInit {
 
     options: PieOptions = new PieOptions();
 
-    colorScheme = colorSets.find(s => s.name == 'forest');
+    colorScheme = customColorSets.find(s => s.name == 'palatte');
 
-    constructor() {}
+    constructor() { }
 
     ngOnInit() {
         Object.assign(this.options, this.customOptions);

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { colorSets } from '@swimlane/ngx-charts/release/utils';
 import { DonutOptions } from '../../../utils/models/donut-options';
+import { customColorSets } from '../../../utils/custom-color-sets';
 
 /**
  * Donut chart component
@@ -18,7 +19,7 @@ export class DonutChartComponent implements OnInit {
 
     options: DonutOptions = new DonutOptions();
 
-    colorScheme = colorSets.find(s => s.name == 'forest');
+    colorScheme = customColorSets.find(s => s.name == 'palatte');
 
     constructor() { }
 
