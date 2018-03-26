@@ -14,10 +14,11 @@ import { BarHorizontalGroupedComponent } from './components/bar/bar-horizontal-g
 import { BarHorizontalStackedComponent } from './components/bar/bar-horizontal-stacked/bar-horizontal-stacked.component';
 import { BarVerticalStackedComponent } from './components/bar/bar-vertical-stacked/bar-vertical-stacked.component';
 import { BarVerticalNormalizedComponent } from './components/bar/bar-vertical-normalized/bar-vertical-normalized.component';
+import { BarHorizontalNormalizedComponent } from './components/bar/bar-horizontal-normalized/bar-horizontal-normalized.component';
 
 let PIECOMPONENTS = [ PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent ];
 let BARCOMPONENTS = [ BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
-                        BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent ];
+                        BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent, BarHorizontalNormalizedComponent ];
 
 @NgModule({
   imports: [
