@@ -7,18 +7,21 @@ import { DonutChartComponent } from './components/pie/donut-chart/donut-chart.co
 import { NoDataComponent } from './utils/no-data.component';
 import { DonutAdvancedComponent } from './components/pie/donut-advanced/donut-advanced.component';
 import { DonutGridComponent } from './components/pie/donut-grid/donut-grid.component';
+import { BarVerticalComponent } from './components/bar/bar-vertical/bar-vertical.component';
+import { BarHorizontalComponent } from './components/bar/bar-horizontal/bar-horizontal.component';
+
+let PIECOMPONENTS = [ PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent ];
+let BARCOMPONENTS = [ BarVerticalComponent, BarHorizontalComponent ];
 
 @NgModule({
   imports: [
     CommonModule,
     NgxChartsModule
   ],
-  declarations: [NeuChartsComponent, PieChartComponent, DonutChartComponent, NoDataComponent, DonutAdvancedComponent, DonutGridComponent],
+  declarations: [ NeuChartsComponent, NoDataComponent,  ...PIECOMPONENTS, ...BARCOMPONENTS ],
   exports: [
-    PieChartComponent,
-    DonutChartComponent,
-    DonutAdvancedComponent,
-    DonutGridComponent
+    ...PIECOMPONENTS,
+    ...BARCOMPONENTS
   ]
 })
 export class NeuChartsModule { }

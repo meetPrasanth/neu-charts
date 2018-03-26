@@ -1,20 +1,31 @@
+<div *ngIf="false" class="card-container">
+
+    <div class="card">
+        <neu-charts-pie [data]="single" [options]="options"></neu-charts-pie>
+    </div>
+
+    <div class="card">
+        <neu-charts-donut [data]="single" [options]="donutOptions"></neu-charts-donut>
+    </div>
+
+    <div class="card">
+        <neu-charts-donut-advanced [data]="single"></neu-charts-donut-advanced>
+    </div>
+
+    <div class="card">
+        <neu-charts-donut-grid [data]="single"></neu-charts-donut-grid>
+    </div>
+
+</div>
 
 <div class="card-container">
 
-<div class="card">
-    <neu-charts-pie [data]="single" [options]="options"></neu-charts-pie>
-</div>
-
-<div class="card">
-    <neu-charts-donut [data]="single" [options]="donutOptions"></neu-charts-donut>
-</div>
-
-<div class="card">
-    <neu-charts-donut-advanced [data]="single"></neu-charts-donut-advanced>
-</div>
-
-<div class="card">
-    <neu-charts-donut-grid [data]="single"></neu-charts-donut-grid>
-</div>
+    <div class="card">
+        <neu-charts-bar-vertical [data]="single"></neu-charts-bar-vertical>
+    </div>
+    
+    <div class="card">
+        <neu-charts-bar-horizontal [data]="single"></neu-charts-bar-horizontal>
+    </div>
 
 </div>
