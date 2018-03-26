@@ -20,7 +20,7 @@ export class AppComponent {
   }
 
   constructor() {
-      Object.assign(this, { single });
+      Object.assign(this, { single, multi });
       console.log(this.single);
   }
 
