@@ -1,17 +1,17 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { customColorSets } from '../../../utils/custom-color-sets';
 import { BarGroupedOptions } from '../../../utils/models/bar-grouped-options';
+import { customColorSets } from '../../../utils/custom-color-sets';
 
 /**
- * Bar vertical grouped chart
+ * Bar horizontal grouped chart
  * @author Prasanth Venkatesan
  */
 @Component({
-  selector: 'neu-charts-bar-vertical-grouped',
-  templateUrl: './bar-vertical-grouped.component.html',
-  styleUrls: ['./bar-vertical-grouped.component.scss']
+  selector: 'neu-charts-bar-horizontal-grouped',
+  templateUrl: './bar-horizontal-grouped.component.html',
+  styleUrls: ['./bar-horizontal-grouped.component.scss']
 })
-export class BarVerticalGroupedComponent implements OnInit {
+export class BarHorizontalGroupedComponent implements OnInit {
 
     @Input('data') data: any;
     @Input('options') customOptions: BarGroupedOptions;

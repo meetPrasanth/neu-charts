@@ -10,9 +10,10 @@ import { DonutGridComponent } from './components/pie/donut-grid/donut-grid.compo
 import { BarVerticalComponent } from './components/bar/bar-vertical/bar-vertical.component';
 import { BarHorizontalComponent } from './components/bar/bar-horizontal/bar-horizontal.component';
 import { BarVerticalGroupedComponent } from './components/bar/bar-vertical-grouped/bar-vertical-grouped.component';
+import { BarHorizontalGroupedComponent } from './components/bar/bar-horizontal-grouped/bar-horizontal-grouped.component';
 
 let PIECOMPONENTS = [ PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent ];
-let BARCOMPONENTS = [ BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent ];
+let BARCOMPONENTS = [ BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent ];
 
 @NgModule({
   imports: [
