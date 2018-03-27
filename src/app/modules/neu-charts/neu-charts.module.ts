@@ -15,20 +15,23 @@ import { BarHorizontalStackedComponent } from './components/bar/bar-horizontal-s
 import { BarVerticalStackedComponent } from './components/bar/bar-vertical-stacked/bar-vertical-stacked.component';
 import { BarVerticalNormalizedComponent } from './components/bar/bar-vertical-normalized/bar-vertical-normalized.component';
 import { BarHorizontalNormalizedComponent } from './components/bar/bar-horizontal-normalized/bar-horizontal-normalized.component';
+import { LineComponent } from './components/line-area/line/line.component';
 
 let PIECOMPONENTS = [ PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent ];
 let BARCOMPONENTS = [ BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
                         BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent, BarHorizontalNormalizedComponent ];
+let LINEORAREACOMPONENTS = [ LineComponent ];
 
 @NgModule({
   imports: [
     CommonModule,
     NgxChartsModule
   ],
-  declarations: [ NeuChartsComponent, NoDataComponent,  ...PIECOMPONENTS, ...BARCOMPONENTS ],
+  declarations: [ NeuChartsComponent, NoDataComponent,  ...PIECOMPONENTS, ...BARCOMPONENTS, ...LINEORAREACOMPONENTS ],
   exports: [
     ...PIECOMPONENTS,
-    ...BARCOMPONENTS
+    ...BARCOMPONENTS,
+    ...LINEORAREACOMPONENTS
   ]
 })
 export class NeuChartsModule { }
