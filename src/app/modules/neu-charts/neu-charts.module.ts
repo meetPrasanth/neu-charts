@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {NgxChartsModule} from '@swimlane/ngx-charts';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NeuChartsComponent } from './neu-charts.component';
 import { PieChartComponent } from './components/pie/pie-chart/pie-chart.component';
 import { DonutChartComponent } from './components/pie/donut-chart/donut-chart.component';
@@ -18,22 +18,27 @@ import { BarHorizontalNormalizedComponent } from './components/bar/bar-horizonta
 import { LineComponent } from './components/line-area/line/line.component';
 import { AreaComponent } from './components/line-area/area/area.component';
 import { AreaStackedComponent } from './components/line-area/area-stacked/area-stacked.component';
+import { AreaNormalizedComponent } from './components/line-area/area-normalized/area-normalized.component';
 
-let PIECOMPONENTS = [ PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent ];
-let BARCOMPONENTS = [ BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
-                        BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent, BarHorizontalNormalizedComponent ];
-let LINEORAREACOMPONENTS = [ LineComponent, AreaComponent, AreaStackedComponent ];
+let PIECOMPONENTS = [PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent];
+let BARCOMPONENTS = [BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
+    BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent, BarHorizontalNormalizedComponent];
+let LINEORAREACOMPONENTS = [LineComponent, AreaComponent, AreaStackedComponent, AreaNormalizedComponent];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    NgxChartsModule
-  ],
-  declarations: [ NeuChartsComponent, NoDataComponent,  ...PIECOMPONENTS, ...BARCOMPONENTS, ...LINEORAREACOMPONENTS ],
-  exports: [
-    ...PIECOMPONENTS,
-    ...BARCOMPONENTS,
-    ...LINEORAREACOMPONENTS
-  ]
+    imports: [
+        CommonModule,
+        NgxChartsModule
+    ],
+    declarations: [NeuChartsComponent, NoDataComponent,
+        ...PIECOMPONENTS,
+        ...BARCOMPONENTS,
+        ...LINEORAREACOMPONENTS
+    ],
+    exports: [
+        ...PIECOMPONENTS,
+        ...BARCOMPONENTS,
+        ...LINEORAREACOMPONENTS
+    ]
 })
 export class NeuChartsModule { }
