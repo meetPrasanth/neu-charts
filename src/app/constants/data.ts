@@ -56,6 +56,14 @@ export var single = [
         {
           "name": "2011",
           "value": 8940000
+        },
+        {
+          "name": "2012",
+          "value": 7300000
+        },
+        {
+          "name": "2013",
+          "value": 8940000
         }
       ]
     },
@@ -70,6 +78,14 @@ export var single = [
         {
           "name": "2011",
           "value": 8270000
+        },
+        {
+          "name": "2012",
+          "value": 7300000
+        },
+        {
+          "name": "2013",
+          "value": 8940000
         }
       ]
     },
@@ -84,6 +100,14 @@ export var single = [
         {
           "name": "2011",
           "value": 5800000
+        },
+        {
+          "name": "2012",
+          "value": 7300000
+        },
+        {
+          "name": "2013",
+          "value": 8940000
         }
       ]
     }

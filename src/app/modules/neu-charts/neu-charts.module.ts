@@ -16,11 +16,12 @@ import { BarVerticalStackedComponent } from './components/bar/bar-vertical-stack
 import { BarVerticalNormalizedComponent } from './components/bar/bar-vertical-normalized/bar-vertical-normalized.component';
 import { BarHorizontalNormalizedComponent } from './components/bar/bar-horizontal-normalized/bar-horizontal-normalized.component';
 import { LineComponent } from './components/line-area/line/line.component';
+import { AreaComponent } from './components/line-area/area/area.component';
 
 let PIECOMPONENTS = [ PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent ];
 let BARCOMPONENTS = [ BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
                         BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent, BarHorizontalNormalizedComponent ];
-let LINEORAREACOMPONENTS = [ LineComponent ];
+let LINEORAREACOMPONENTS = [ LineComponent, AreaComponent ];
 
 @NgModule({
   imports: [

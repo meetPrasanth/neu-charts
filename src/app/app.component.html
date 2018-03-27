@@ -57,7 +57,11 @@
 <div class="card-container">
 
     <div class="card">
-        <neu-charts-line [data]="multi"></neu-charts-line>
+        <neu-charts-line [data]="multi" [options]="lineOptions"></neu-charts-line>
+    </div>
+
+    <div class="card">
+        <neu-charts-area [data]="multi" [options]="lineOptions"></neu-charts-area>
     </div>
 
 </div>

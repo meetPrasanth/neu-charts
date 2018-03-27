@@ -19,6 +19,10 @@ export class AppComponent {
       arcWidth: 0.3
   }
 
+  lineOptions = {
+      timeline: false
+  }
+
   constructor() {
       Object.assign(this, { single, multi });
       console.log(this.single);
