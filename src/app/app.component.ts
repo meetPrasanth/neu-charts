@@ -24,6 +24,10 @@ export class AppComponent {
       isXAxisDate: true
   }
 
+  mapOptions = {
+    innerPadding: 5
+  }
+
   constructor() {
       Object.assign(this, { single, multi });
       console.log(this.single);

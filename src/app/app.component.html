@@ -54,7 +54,7 @@
 
 </div>
 
-<div *ngIf="true" class="card-container">
+<div *ngIf="false" class="card-container">
 
     <div class="card">
         <neu-charts-line [data]="multi" [options]="lineOptions"></neu-charts-line>
@@ -70,6 +70,14 @@
 
     <div class="card">
         <neu-charts-area-normalized [data]="multi" [options]="lineOptions"></neu-charts-area-normalized>
+    </div>
+
+</div>
+
+<div *ngIf="true" class="card-container">
+
+    <div class="card">
+        <neu-charts-heat [data]="multi" [options]="mapOptions"></neu-charts-heat>
     </div>
 
 </div>

@@ -19,11 +19,13 @@ import { LineComponent } from './components/line-area/line/line.component';
 import { AreaComponent } from './components/line-area/area/area.component';
 import { AreaStackedComponent } from './components/line-area/area-stacked/area-stacked.component';
 import { AreaNormalizedComponent } from './components/line-area/area-normalized/area-normalized.component';
+import { HeatComponent } from './components/map/heat/heat.component';
 
 let PIECOMPONENTS = [PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent];
 let BARCOMPONENTS = [BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
     BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent, BarHorizontalNormalizedComponent];
 let LINEORAREACOMPONENTS = [LineComponent, AreaComponent, AreaStackedComponent, AreaNormalizedComponent];
+let MAPCOMPONENTS = [HeatComponent];
 
 @NgModule({
     imports: [
@@ -33,12 +35,14 @@ let LINEORAREACOMPONENTS = [LineComponent, AreaComponent, AreaStackedComponent, 
     declarations: [NeuChartsComponent, NoDataComponent,
         ...PIECOMPONENTS,
         ...BARCOMPONENTS,
-        ...LINEORAREACOMPONENTS
+        ...LINEORAREACOMPONENTS,
+        ...MAPCOMPONENTS
     ],
     exports: [
         ...PIECOMPONENTS,
         ...BARCOMPONENTS,
-        ...LINEORAREACOMPONENTS
+        ...LINEORAREACOMPONENTS,
+        ...MAPCOMPONENTS
     ]
 })
 export class NeuChartsModule { }
