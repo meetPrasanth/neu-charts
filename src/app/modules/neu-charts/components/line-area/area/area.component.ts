@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { LineOptions } from '../../../utils/models/line-options';
 import { customColorSets } from '../../../utils/custom-color-sets';
 
@@ -22,9 +22,12 @@ export class AreaComponent implements OnInit {
 
     constructor() { }
 
-    ngOnInit() {
+    ngOnInit() { }
+
+    ngOnChanges(changes: SimpleChanges) {
         Object.assign(this.options, this.customOptions);
-        if(this.options.isXAxisDate) {
+        if((this.data && (changes.data.previousValue != changes.data.currentValue)) || 
+        (this.options.isXAxisDate && (changes.customOptions.previousValue != changes.customOptions.currentValue))) {
             this.data.forEach(element => {
                 element.series.forEach(seriesData => {
                     seriesData.name = new Date(seriesData.name);
