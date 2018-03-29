@@ -24,7 +24,13 @@ export class AreaStackedComponent implements OnInit {
 
     ngOnInit() {
         Object.assign(this.options, this.customOptions);
-        console.log(this.data, this.options);
+        if(this.options.isXAxisDate) {
+            this.data.forEach(element => {
+                element.series.forEach(seriesData => {
+                    seriesData.name = new Date(seriesData.name);
+                });
+            });
+        }
     }
 
 }

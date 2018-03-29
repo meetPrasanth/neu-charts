@@ -24,6 +24,13 @@ export class AreaNormalizedComponent implements OnInit {
 
     ngOnInit() {
         Object.assign(this.options, this.customOptions);
+        if(this.options.isXAxisDate) {
+            this.data.forEach(element => {
+                element.series.forEach(seriesData => {
+                    seriesData.name = new Date(seriesData.name);
+                });
+            });
+        }
     }
 
 }

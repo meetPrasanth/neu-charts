@@ -20,7 +20,8 @@ export class AppComponent {
   }
 
   lineOptions = {
-      timeline: false
+      timeline: true,
+      isXAxisDate: true
   }
 
   constructor() {
