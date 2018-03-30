@@ -25,7 +25,8 @@ export class AppComponent {
   }
 
   mapOptions = {
-    innerPadding: 5
+    innerPadding: 5,
+    showSkew : true
   }
 
   constructor() {

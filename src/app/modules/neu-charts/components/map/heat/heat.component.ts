@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 import { MapOptions } from '../../../utils/models/map-options';
 import { customColorSets } from '../../../utils/custom-color-sets';
 
@@ -18,8 +18,20 @@ export class HeatComponent implements OnInit {
 
     constructor() { }
 
-    ngOnInit() {
+    ngOnInit() { }
+
+    ngOnChanges(changes: SimpleChanges) {
         Object.assign(this.options, this.customOptions);
+        if (this.options.showSkew && (changes.customOptions.previousValue != changes.customOptions.currentValue)) {
+            this.data.sort((current, next) => {
+                if (current.series.length > next.series.length) {
+                    return -1;
+                } else if (current.series.length < next.series.length) {
+                    return 1;
+                }
+                return 0;
+            });
+        }
     }
 
 }
