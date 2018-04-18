@@ -26,7 +26,8 @@ export class AppComponent {
 
   mapOptions = {
     innerPadding: 5,
-    showSkew : true
+    showSkew : true,
+    colorScheme: ['#396387', '#204566']
   }
 
   constructor() {

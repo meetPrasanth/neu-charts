@@ -14,7 +14,7 @@ export class HeatComponent implements OnInit {
 
     options: MapOptions = new MapOptions();
 
-    colorScheme = customColorSets.find(s => s.name == 'palatte');
+    colorScheme: any;
 
     constructor() { }
 
@@ -22,6 +22,13 @@ export class HeatComponent implements OnInit {
 
     ngOnChanges(changes: SimpleChanges) {
         Object.assign(this.options, this.customOptions);
+
+        if(this.options.colorScheme != null) {
+            this.colorScheme = {};
+            this.colorScheme['domain'] = this.options.colorScheme;
+        } else {
+            this.colorScheme = customColorSets.find(s => s.name == 'palatte');
+        }
         if (this.options.showSkew && (changes.customOptions.previousValue != changes.customOptions.currentValue)) {
             this.data.sort((current, next) => {
                 if (current.series.length > next.series.length) {
