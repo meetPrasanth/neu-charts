@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { single, multi } from './constants/data';
+import { single, multi, reference } from './constants/data';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'app';
   single: any[] = [];
   multi: any[] = [];
+  reference: any[] = [];
 
   options = {
     showLegend: true
@@ -21,7 +22,8 @@ export class AppComponent {
 
   lineOptions = {
       timeline: true,
-      isXAxisDate: true
+      isXAxisDate: true,
+      referenceLines: reference
   }
 
   mapOptions = {
@@ -33,6 +35,10 @@ export class AppComponent {
   constructor() {
       Object.assign(this, { single, multi });
       console.log(this.single);
+  }
+
+  mPartClicked(event) {
+      console.log("clicked", event);
   }
 
 }
