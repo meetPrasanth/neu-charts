@@ -1,6 +1,6 @@
 {
   "name": "neu-charts",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -13,8 +13,8 @@
   },
   "private": false,
   "dependencies": {
-    "@swimlane/ngx-charts": "^7.1.1",
-    "d3": "^4.13.0"
+    "@swimlane/ngx-charts": "7.1.1",
+    "d3": "4.13.0"
   },
   "devDependencies": {
     "@angular/animations": "^5.1.0",

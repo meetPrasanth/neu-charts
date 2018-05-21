@@ -10,7 +10,8 @@
       [showYAxisLabel]="options.showYAxisLabel"
       [xAxisLabel]="options.xAxisLabel"
       [yAxisLabel]="options.yAxisLabel"
-      [innerPadding]="options.innerPadding">
+      [innerPadding]="options.innerPadding"
+      (select)="mSelectedEvent($event)">
     </ngx-charts-heat-map>
 </div>
 <no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

@@ -3,7 +3,7 @@
       [view]="view"
       [scheme]="colorScheme"
       [results]="data"
-      (select)="onSelect($event)">
+      (select)="mSelectedEvent($event)">
     </ngx-charts-pie-grid>
 </div>
 <no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

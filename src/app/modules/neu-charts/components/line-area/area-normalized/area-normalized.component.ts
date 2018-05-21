@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges, Output, EventEmitter } from '@angular/core';
 import { LineOptions } from '../../../utils/models/line-options';
 import { customColorSets } from '../../../utils/custom-color-sets';
 
@@ -15,6 +15,8 @@ export class AreaNormalizedComponent implements OnInit {
 
     @Input('data') data: any;
     @Input('options') customOptions: LineOptions;
+
+    @Output() onSelect: EventEmitter<any> = new EventEmitter<any>();
 
     options: LineOptions = new LineOptions();
 
@@ -34,6 +36,10 @@ export class AreaNormalizedComponent implements OnInit {
                 });
             });
         }
+    }
+
+    mSelectedEvent(event: any) {
+        this.onSelect.emit(event);
     }
 
 }

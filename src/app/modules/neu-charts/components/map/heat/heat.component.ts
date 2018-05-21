@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges, Output, EventEmitter } from '@angular/core';
 import { MapOptions } from '../../../utils/models/map-options';
 import { customColorSets } from '../../../utils/custom-color-sets';
 
@@ -11,6 +11,8 @@ export class HeatComponent implements OnInit {
 
     @Input('data') data: any;
     @Input('options') customOptions: MapOptions;
+
+    @Output() onSelect: EventEmitter<any> = new EventEmitter<any>();
 
     options: MapOptions = new MapOptions();
 
@@ -39,6 +41,10 @@ export class HeatComponent implements OnInit {
                 return 0;
             });
         }
+    }
+
+    mSelectedEvent(event: any) {
+        this.onSelect.emit(event);
     }
 
 }

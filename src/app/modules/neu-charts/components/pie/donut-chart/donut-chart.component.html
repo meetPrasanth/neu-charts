@@ -7,7 +7,8 @@
         [labels]="options.showLabels"
         [doughnut]="options.doughnut"
         [arcWidth]="options.arcWidth"
-        [gradient]="gradient">
+        [gradient]="gradient"
+        (select)="mSelectedEvent($event)">
         </ngx-charts-pie-chart>
 </div>
 <no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

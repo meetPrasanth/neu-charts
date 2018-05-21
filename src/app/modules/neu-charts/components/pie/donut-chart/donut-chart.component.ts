@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { colorSets } from '@swimlane/ngx-charts/release/utils';
 import { DonutOptions } from '../../../utils/models/donut-options';
 import { customColorSets } from '../../../utils/custom-color-sets';
@@ -17,6 +17,8 @@ export class DonutChartComponent implements OnInit {
     @Input('data') data: any[] = [];
     @Input('options') cutomOptions: DonutOptions;
 
+    @Output() onSelect: EventEmitter<any> = new EventEmitter<any>();
+
     options: DonutOptions = new DonutOptions();
 
     colorScheme = customColorSets.find(s => s.name == 'palatte');
@@ -25,6 +27,10 @@ export class DonutChartComponent implements OnInit {
 
     ngOnInit() {   
         Object.assign(this.options, this.cutomOptions);
+    }
+
+    mSelectedEvent(event: any) {
+        this.onSelect.emit(event);
     }
 
 }

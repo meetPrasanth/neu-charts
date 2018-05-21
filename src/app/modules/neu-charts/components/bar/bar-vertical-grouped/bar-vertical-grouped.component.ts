@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { customColorSets } from '../../../utils/custom-color-sets';
 import { BarGroupedOptions } from '../../../utils/models/bar-grouped-options';
 
@@ -15,6 +15,7 @@ export class BarVerticalGroupedComponent implements OnInit {
 
     @Input('data') data: any;
     @Input('options') customOptions: BarGroupedOptions;
+    @Output() onSelect : EventEmitter<any> = new EventEmitter<any>();
 
     options: BarGroupedOptions = new BarGroupedOptions();
 
@@ -24,6 +25,10 @@ export class BarVerticalGroupedComponent implements OnInit {
 
     ngOnInit() {
         Object.assign(this.options, this.customOptions);
+    }
+
+    mSelectedEvent(event: any) {
+        this.onSelect.emit(event);
     }
 
 }

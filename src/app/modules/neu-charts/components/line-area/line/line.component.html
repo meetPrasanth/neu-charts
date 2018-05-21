@@ -11,7 +11,10 @@
         [yAxisLabel]="options.yAxisLabel"
         [autoScale]="options.autoScale"
         [roundDomains]="options.roundDomains"
-        [timeline]="options.timeline">
+        [timeline]="options.timeline"
+        (select)="mSelectedEvent($event)"
+        [showRefLines]="options.showRefLines"
+        [referenceLines]="options.referenceLines">
     </ngx-charts-line-chart>
 </div>
 <no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

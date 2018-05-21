@@ -10,7 +10,8 @@
         [xAxisLabel]="options.xAxisLabel"
         [yAxisLabel]="options.yAxisLabel"
         [autoScale]="options.autoScale"
-        [timeline]="options.timeline">
+        [timeline]="options.timeline"
+        (select)="mSelectedEvent($event)">
         <!-- [roundDomains]="options.roundDomains"> -->
     </ngx-charts-area-chart>
 </div>

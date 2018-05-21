@@ -10,7 +10,8 @@
       [showYAxisLabel]="options.showYAxisLabel"
       [xAxisLabel]="options.xAxisLabel"
       [yAxisLabel]="options.yAxisLabel"
-      [barPadding]="options.barPadding">
+      [barPadding]="options.barPadding"
+      (select)="mSelectedEvent($event)">
     </ngx-charts-bar-vertical>
 </div>
 <no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

@@ -11,7 +11,8 @@
       [xAxisLabel]="options.xAxisLabel"
       [yAxisLabel]="options.yAxisLabel"
       [barPadding]="options.barPadding"
-      [groupPadding]="options.groupPadding">
+      [groupPadding]="options.groupPadding"
+      (select)="mSelectedEvent($event)">
     </ngx-charts-bar-horizontal-2d>
 </div>
 <no-data *ngIf="(!data) || (data.length <= 0)"></no-data>

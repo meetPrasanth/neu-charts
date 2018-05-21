@@ -1,55 +1,19 @@
 <div *ngIf="false" class="card-container">
 
     <div class="card">
-        <neu-charts-pie [data]="single" [options]="options"></neu-charts-pie>
+        <neu-charts-pie [data]="single" [options]="options" (onSelect)="mPartClicked($event)"></neu-charts-pie>
     </div>
 
     <div class="card">
-        <neu-charts-donut [data]="single" [options]="donutOptions"></neu-charts-donut>
+        <neu-charts-donut [data]="single" [options]="donutOptions" (onSelect)="mPartClicked($event)"></neu-charts-donut>
     </div>
 
     <div class="card">
-        <neu-charts-donut-advanced [data]="single"></neu-charts-donut-advanced>
+        <neu-charts-donut-advanced [data]="single" (onSelect)="mPartClicked($event)"></neu-charts-donut-advanced>
     </div>
 
     <div class="card">
-        <neu-charts-donut-grid [data]="single"></neu-charts-donut-grid>
-    </div>
-
-</div>
-
-<div *ngIf="false" class="card-container">
-
-    <div class="card">
-        <neu-charts-bar-vertical [data]="single"></neu-charts-bar-vertical>
-    </div>
-    
-    <div class="card">
-        <neu-charts-bar-horizontal [data]="single"></neu-charts-bar-horizontal>
-    </div>
-
-    <div class="card">
-        <neu-charts-bar-vertical-grouped [data]="multi"></neu-charts-bar-vertical-grouped>
-    </div>
-
-    <div class="card">
-        <neu-charts-bar-horizontal-grouped [data]="multi"></neu-charts-bar-horizontal-grouped>
-    </div>
-    
-    <div class="card">
-        <neu-charts-bar-vertical-stacked [data]="multi"></neu-charts-bar-vertical-stacked>
-    </div>
-
-    <div class="card">
-        <neu-charts-bar-horizontal-stacked [data]="multi"></neu-charts-bar-horizontal-stacked>
-    </div>
-
-    <div class="card">
-        <neu-charts-bar-vertical-normalized [data]="multi"></neu-charts-bar-vertical-normalized>
-    </div>
-
-    <div class="card">
-        <neu-charts-bar-horizontal-normalized [data]="multi"></neu-charts-bar-horizontal-normalized>
+        <neu-charts-donut-grid [data]="single" (onSelect)="mPartClicked($event)"></neu-charts-donut-grid>
     </div>
 
 </div>
@@ -57,19 +21,35 @@
 <div *ngIf="false" class="card-container">
 
     <div class="card">
-        <neu-charts-line [data]="multi" [options]="lineOptions"></neu-charts-line>
+        <neu-charts-bar-vertical [data]="single" (onSelect)="mPartClicked($event)"></neu-charts-bar-vertical>
+    </div>
+    
+    <div class="card">
+        <neu-charts-bar-horizontal [data]="single" (onSelect)="mPartClicked($event)"></neu-charts-bar-horizontal>
     </div>
 
     <div class="card">
-        <neu-charts-area [data]="multi" [options]="lineOptions"></neu-charts-area>
+        <neu-charts-bar-vertical-grouped [data]="multi" (onSelect)="mPartClicked($event)"></neu-charts-bar-vertical-grouped>
     </div>
 
     <div class="card">
-        <neu-charts-area-stacked [data]="multi" [options]="lineOptions"></neu-charts-area-stacked>
+        <neu-charts-bar-horizontal-grouped [data]="multi" (onSelect)="mPartClicked($event)"></neu-charts-bar-horizontal-grouped>
+    </div>
+    
+    <div class="card">
+        <neu-charts-bar-vertical-stacked [data]="multi" (onSelect)="mPartClicked($event)"></neu-charts-bar-vertical-stacked>
     </div>
 
     <div class="card">
-        <neu-charts-area-normalized [data]="multi" [options]="lineOptions"></neu-charts-area-normalized>
+        <neu-charts-bar-horizontal-stacked [data]="multi" (onSelect)="mPartClicked($event)"></neu-charts-bar-horizontal-stacked>
+    </div>
+
+    <div class="card">
+        <neu-charts-bar-vertical-normalized [data]="multi" (onSelect)="mPartClicked($event)"></neu-charts-bar-vertical-normalized>
+    </div>
+
+    <div class="card">
+        <neu-charts-bar-horizontal-normalized [data]="multi" (onSelect)="mPartClicked($event)"></neu-charts-bar-horizontal-normalized>
     </div>
 
 </div>
@@ -77,7 +57,27 @@
 <div *ngIf="true" class="card-container">
 
     <div class="card">
-        <neu-charts-heat [data]="multi" [options]="mapOptions"></neu-charts-heat>
+        <neu-charts-line [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-line>
+    </div>
+
+    <div class="card">
+        <neu-charts-area [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area>
+    </div>
+
+    <div class="card">
+        <neu-charts-area-stacked [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area-stacked>
+    </div>
+
+    <div class="card">
+        <neu-charts-area-normalized [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area-normalized>
+    </div>
+
+</div>
+
+<div *ngIf="true" class="card-container">
+
+    <div class="card">
+        <neu-charts-heat [data]="multi" [options]="mapOptions" (onSelect)="mPartClicked($event)"></neu-charts-heat>
     </div>
 
 </div>
