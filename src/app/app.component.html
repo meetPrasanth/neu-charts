@@ -54,7 +54,7 @@
 
 </div>
 
-<div *ngIf="true" class="card-container">
+<div *ngIf="false" class="card-container">
 
     <div class="card">
         <neu-charts-line [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-line>
@@ -78,6 +78,10 @@
 
     <div class="card">
         <neu-charts-heat [data]="multi" [options]="mapOptions" (onSelect)="mPartClicked($event)"></neu-charts-heat>
+    </div>
+
+    <div class="card">
+        <neu-charts-tree [data]="single" (onSelect)="mPartClicked($event)"></neu-charts-tree>
     </div>
 
 </div>

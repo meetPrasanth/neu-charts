@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 import { NeuChartsComponent } from './neu-charts.component';
 import { PieChartComponent } from './components/pie/pie-chart/pie-chart.component';
 import { DonutChartComponent } from './components/pie/donut-chart/donut-chart.component';
@@ -20,12 +21,13 @@ import { AreaComponent } from './components/line-area/area/area.component';
 import { AreaStackedComponent } from './components/line-area/area-stacked/area-stacked.component';
 import { AreaNormalizedComponent } from './components/line-area/area-normalized/area-normalized.component';
 import { HeatComponent } from './components/map/heat/heat.component';
+import { TreeComponent } from './components/map/tree/tree.component';
 
 let PIECOMPONENTS = [PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent];
 let BARCOMPONENTS = [BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
     BarHorizontalStackedComponent, BarVerticalStackedComponent, BarVerticalNormalizedComponent, BarHorizontalNormalizedComponent];
 let LINEORAREACOMPONENTS = [LineComponent, AreaComponent, AreaStackedComponent, AreaNormalizedComponent];
-let MAPCOMPONENTS = [HeatComponent];
+let MAPCOMPONENTS = [HeatComponent, TreeComponent];
 
 @NgModule({
     imports: [
@@ -36,7 +38,7 @@ let MAPCOMPONENTS = [HeatComponent];
         ...PIECOMPONENTS,
         ...BARCOMPONENTS,
         ...LINEORAREACOMPONENTS,
-        ...MAPCOMPONENTS
+        ...MAPCOMPONENTS,
     ],
     exports: [
         ...PIECOMPONENTS,

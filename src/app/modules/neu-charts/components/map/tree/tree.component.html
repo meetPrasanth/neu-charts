@@ -1,0 +1,8 @@
+<div class="chart-container" *ngIf="data && (data.length > 0)">
+    <ngx-charts-tree-map
+        [scheme]="colorScheme"
+        [results]="data"
+        (select)="mSelectedEvent($event)">
+    </ngx-charts-tree-map>
+</div>
+<no-data *ngIf="(!data) || (data.length <= 0)"></no-data>
