@@ -140,3 +140,57 @@ export var reference = [
         "value": 5500000
     }
 ];
+
+export var comboLine = [
+    {
+        name: '2010',
+        series: [
+            {
+                name: 'USA',
+                value: 7870000
+            },{
+                name: 'Germany',
+                value: 7300000
+            },{
+                name: 'France',
+                value: 5000002
+            }
+        ]
+    },{
+        name: '2011',
+        series: [
+            {
+                name: 'Germany',
+                value: 8940000
+            },{
+                name: 'France',
+                value: 5800000
+            }
+        ]
+    },{
+        name: '2012',
+        series: [
+            {
+                name: 'Germany',
+                value: 7200000
+            },{
+                name: 'France',
+                value: 7300000
+            }
+        ]
+    },{
+        name: '2013',
+        series: [
+            {
+                name: 'USA',
+                value: 8270000
+            },{
+                name: 'Germany',
+                value: 8140000
+            },{
+                name: 'France',
+                value: 8940000
+            }
+        ]
+    },
+];

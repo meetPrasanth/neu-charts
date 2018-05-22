@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { single, multi, reference } from './constants/data';
+import { single, multi, reference, comboLine } from './constants/data';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +11,7 @@ export class AppComponent {
   single: any[] = [];
   multi: any[] = [];
   reference: any[] = [];
+  comboLine = [];
 
   options = {
     showLegend: true
@@ -33,7 +34,7 @@ export class AppComponent {
   }
 
   constructor() {
-      Object.assign(this, { single, multi });
+      Object.assign(this, { single, multi, comboLine });
       console.log(this.single);
   }
 

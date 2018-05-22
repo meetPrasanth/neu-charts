@@ -1,0 +1,26 @@
+
+<div class="chart-container" *ngIf="(dataBar && (dataBar.length > 0)) && (dataLine && (dataLine.length > 0))">
+    <neu-charts-combo-bar-line-raw
+        [scheme]="colorScheme"
+        [colorSchemeLine]="lineChartScheme"
+        [results]="dataBar"
+        [lineChart]="dataLine"
+        [legend]="options.showLegend"
+        [xAxis]="options.showXAxis"
+        [yAxis]="options.showYAxis"
+        [showXAxisLabel]="options.showXAxisLabel"
+        [showYAxisLabel]="options.showYAxisLabel"
+        [xAxisLabel]="options.xAxisLabel"
+        [yAxisLabel]="options.yAxisLabel"
+        
+        [showRightYAxisLabel]="options.showRightYAxisLabel"
+        [yAxisLabelRight]="options.yAxisLabelRight"
+
+        [yLeftAxisScaleFactor]="yLeftAxisScale"
+        [yRightAxisScaleFactor]="yRightAxisScale"
+        [yAxisTickFormatting]="yLeftTickFormat"
+        [yRightAxisTickFormatting]="yRightTickFormat"
+        (select)="mSelectedEvent($event)">
+        </neu-charts-combo-bar-line-raw>
+</div>
+<no-data *ngIf="(!dataBar) || (dataBar.length <= 0) || (!dataLine) || (dataLine.length <= 0)"></no-data>
