@@ -13,7 +13,7 @@
   },
   "private": false,
   "dependencies": {
-    "@swimlane/ngx-charts": "7.1.1",
+    "@swimlane/ngx-charts": "7.4.0",
     "d3": "4.13.0"
   },
   "devDependencies": {

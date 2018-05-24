@@ -25,6 +25,7 @@ import { TreeComponent } from './components/map/tree/tree.component';
 import { BarLineWrapperComponent } from './components/combo/bar-line/bar-line-wrapper.component';
 import { BarLineComponent } from './components/combo/bar-line/bar-line.component';
 import { BarSeriesComboComponent } from './components/combo/bar-line/bar-series.component';
+import { BubbleComponent } from './components/scatter/bubble/bubble.component';
 
 let PIECOMPONENTS = [PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent];
 let BARCOMPONENTS = [BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
@@ -32,6 +33,8 @@ let BARCOMPONENTS = [BarVerticalComponent, BarHorizontalComponent, BarVerticalGr
 let LINEORAREACOMPONENTS = [LineComponent, AreaComponent, AreaStackedComponent, AreaNormalizedComponent];
 let MAPCOMPONENTS = [HeatComponent, TreeComponent];
 let COMBOCOMPONENT = [BarLineWrapperComponent, BarLineComponent, BarSeriesComboComponent];
+
+let SCATTERCOMPONENT = [BubbleComponent];
 
 @NgModule({
     imports: [
@@ -43,14 +46,16 @@ let COMBOCOMPONENT = [BarLineWrapperComponent, BarLineComponent, BarSeriesComboC
         ...BARCOMPONENTS,
         ...LINEORAREACOMPONENTS,
         ...MAPCOMPONENTS,
-        ...COMBOCOMPONENT
+        ...COMBOCOMPONENT,
+        ...SCATTERCOMPONENT
     ],
     exports: [
         ...PIECOMPONENTS,
         ...BARCOMPONENTS,
         ...LINEORAREACOMPONENTS,
         ...MAPCOMPONENTS,
-        ...COMBOCOMPONENT
+        ...COMBOCOMPONENT,
+        ...SCATTERCOMPONENT
     ]
 })
 export class NeuChartsModule { }

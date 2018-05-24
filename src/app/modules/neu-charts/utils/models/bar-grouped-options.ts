@@ -11,6 +11,6 @@ export class BarGroupedOptions extends BarOptions {
 
     constructor(showLegend = true, showXAxis = true, showYAxis = true, showXAxisLabel = true, showYAxisLabel = true, xAxisLabel = '', yAxisLabel = '') {
         super(showLegend, showXAxis, showYAxis, showXAxisLabel, showYAxisLabel, xAxisLabel, yAxisLabel);
-        this.groupPadding = 10;
+        this.groupPadding = 6;
     }
 }

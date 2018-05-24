@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { single, multi, reference, comboLine } from './constants/data';
+import { single, multi, reference, comboLine, dataBubble, dataBubble2 } from './constants/data';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,8 @@ export class AppComponent {
   multi: any[] = [];
   reference: any[] = [];
   comboLine = [];
+  dataBubble = [];
+  dataBubble2 = [];
 
   options = {
     showLegend: true
@@ -34,7 +36,7 @@ export class AppComponent {
   }
 
   constructor() {
-      Object.assign(this, { single, multi, comboLine });
+      Object.assign(this, { single, multi, comboLine, dataBubble, dataBubble2 });
       console.log(this.single);
   }
 

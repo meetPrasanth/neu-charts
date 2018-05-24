@@ -22,6 +22,6 @@ export class BarOptions extends Options {
         this.showYAxisLabel = showYAxisLabel;
         this.xAxisLabel = xAxisLabel;
         this.yAxisLabel = yAxisLabel;
-        this.barPadding = 5;
+        this.barPadding = 3;
     }
 }
