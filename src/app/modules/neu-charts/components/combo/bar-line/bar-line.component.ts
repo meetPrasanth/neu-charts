@@ -305,7 +305,7 @@ export class BarLineComponent extends BaseChartComponent {
 
         for (const results of this.lineChart) {
             for (const d of results.series) {
-                if (!values.includes(d.name)) {
+                if (values.indexOf(d.name) == -1) {
                     values.push(d.name);
                 }
             }
