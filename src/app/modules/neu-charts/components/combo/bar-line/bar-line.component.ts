@@ -190,6 +190,7 @@ export class BarLineComponent extends BaseChartComponent {
     legendSpacing = 0;
     bandwidth;
     barPadding = 8;
+    clipPath: string;
 
     trackBy(index, item): string {
         return item.name;

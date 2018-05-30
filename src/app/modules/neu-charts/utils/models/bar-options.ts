@@ -20,8 +20,8 @@ export class BarOptions extends Options {
         this.showYAxis = showYAxis;
         this.showXAxisLabel = showXAxisLabel;
         this.showYAxisLabel = showYAxisLabel;
-        this.xAxisLabel = xAxisLabel;
-        this.yAxisLabel = yAxisLabel;
+        this.xAxisLabel = xAxisLabel.toUpperCase();
+        this.yAxisLabel = yAxisLabel.toUpperCase();
         this.barPadding = 3;
     }
 }
