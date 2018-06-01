@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { single, multi, reference, comboLine, dataBubble, dataBubble2 } from './constants/data';
+import { single, multi, reference, comboLine, dataBubble, dataBubble2, bExample } from './constants/data';
 
 @Component({
   selector: 'app-root',
@@ -35,8 +35,14 @@ export class AppComponent {
     colorScheme: ['#396387', '#204566']
   }
 
+  bubbleOptions = {
+      xAxisLabel : 'Profit',
+      yAxisLabel: 'Cost',
+    //   view: [500, 300]
+  }
+
   constructor() {
-      Object.assign(this, { single, multi, comboLine, dataBubble, dataBubble2 });
+      Object.assign(this, { single, multi, comboLine, dataBubble, dataBubble2, bExample });
       console.log(this.single);
   }
 

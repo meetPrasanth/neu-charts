@@ -196,7 +196,10 @@ export var comboLine = [
 ];
 
 
-export var dataBubble = [
+export var dataBubble = [{"name":"Asia","series":[{"name":"43367.64","x":43367.64,"y":58471.11},{"name":"1924728.2","x":1924728.2,"y":2559474.1},{"name":"277739.67","x":277739.67,"y":400558.73},{"name":"1830670.16","x":1830670.16,"y":3039414.4},{"name":"4145955","x":4145955,"y":5513227.5},{"name":"339350.76","x":339350.76,"y":574951.92}]}];
+
+
+var h = [
     {
         "name": "Germany",
         "series": [
@@ -385,3 +388,5 @@ export var dataBubble2 = [
         ]
     }
 ];
+
+export var bExample = [{"name":"Sub-Saharan Africa","series":[{"name":"27488820.029999997","x":27488820.029999997,"y":12183211.399999999}]},{"name":"Europe","series":[{"name":"22285993.48","x":22285993.48,"y":11082938.63}]},{"name":"Asia","series":[{"name":"15233245.149999999","x":15233245.149999999,"y":6113845.87}]},{"name":"Australia and Oceania","series":[{"name":"9372105.1","x":9372105.1,"y":4722160.029999999}]},{"name":"Middle East and North Africa","series":[{"name":"8291514.720000001","x":8291514.720000001,"y":5761191.859999999}]},{"name":"Central America and the Caribbean","series":[{"name":"6323477.6400000015","x":6323477.6400000015,"y":2846907.85}]},{"name":"North America","series":[{"name":"4185413.79","x":4185413.79,"y":1457942.7599999998}]}];

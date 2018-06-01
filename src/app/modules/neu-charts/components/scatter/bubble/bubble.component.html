@@ -1,5 +1,6 @@
 <div class="chart-container" *ngIf="data && (data.length > 0)">
     <ngx-charts-bubble-chart
+        [view]="options.view"
         [scheme]="colorScheme"
         [results]="data"
         [legend]="options.showLegend"

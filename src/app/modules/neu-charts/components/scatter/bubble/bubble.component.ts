@@ -22,6 +22,8 @@ export class BubbleComponent implements OnInit {
 
     ngOnInit() {
         Object.assign(this.options, this.customOptions);
+
+        console.log("bub option", this.options);
     }
 
     mSelectedEvent(event: any) {

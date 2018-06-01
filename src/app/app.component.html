@@ -89,7 +89,7 @@
 <div *ngIf="true" class="card-container">
 
     <div class="card">
-        <neu-charts-bubble [data]="dataBubble2" (onSelect)="mPartClicked($event)"></neu-charts-bubble>
+        <neu-charts-bubble [data]="dataBubble" [options]="bubbleOptions" (onSelect)="mPartClicked($event)"></neu-charts-bubble>
     </div>
 
     <div class="card">
