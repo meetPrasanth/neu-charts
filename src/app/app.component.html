@@ -1,4 +1,4 @@
-<div *ngIf="true" class="card-container">
+<div *ngIf="false" class="card-container">
 
     <div class="card">
         <neu-charts-pie [data]="single" [options]="options" (onSelect)="mPartClicked($event)"></neu-charts-pie>
@@ -18,7 +18,7 @@
 
 </div>
 
-<div *ngIf="true" class="card-container">
+<div *ngIf="false" class="card-container">
 
     <div class="card">
         <neu-charts-bar-vertical [data]="single" (onSelect)="mPartClicked($event)"></neu-charts-bar-vertical>
@@ -54,27 +54,27 @@
 
 </div>
 
-<div *ngIf="true" class="card-container">
+<div *ngIf="false" class="card-container">
 
     <div class="card">
-        <neu-charts-line [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-line>
+        <neu-charts-line [data]="dateMulti" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-line>
     </div>
 
     <div class="card">
-        <neu-charts-area [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area>
+        <neu-charts-area [data]="dateMulti" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area>
     </div>
 
     <div class="card">
-        <neu-charts-area-stacked [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area-stacked>
+        <neu-charts-area-stacked [data]="dateMulti" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area-stacked>
     </div>
 
     <div class="card">
-        <neu-charts-area-normalized [data]="multi" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area-normalized>
+        <neu-charts-area-normalized [data]="dateMulti" [options]="lineOptions" (onSelect)="mPartClicked($event)"></neu-charts-area-normalized>
     </div>
 
 </div>
 
-<div *ngIf="true" class="card-container">
+<div *ngIf="false" class="card-container">
 
     <div class="card">
         <neu-charts-heat [data]="multi" [options]="mapOptions" (onSelect)="mPartClicked($event)"></neu-charts-heat>
@@ -86,7 +86,7 @@
 
 </div>
 
-<div *ngIf="true" class="card-container">
+<div *ngIf="false" class="card-container">
 
     <div class="card">
         <neu-charts-bubble [data]="dataBubble" [options]="bubbleOptions" (onSelect)="mPartClicked($event)"></neu-charts-bubble>
@@ -96,4 +96,25 @@
         <neu-charts-combo-bar-line [dataBar]="single" [dataLine]="comboLine" (onSelect)="mPartClicked($event)"></neu-charts-combo-bar-line>
     </div>
 
+</div>
+
+<!-- <div *ngIf="false" class="card-container">
+    <div class="card">
+        <neu-maps [data]="usa" mapType="usaLow"></neu-maps>
+    </div>
+    <div class="card">
+        <neu-maps [data]="usa" mapType="usaHigh"></neu-maps>
+    </div>
+    <div class="card">
+        <neu-maps [data]="usa" mapType="usa2Low"></neu-maps>
+    </div>
+    <div class="card">
+        <neu-maps [data]="usa" mapType="usa2High"></neu-maps>
+    </div>
+</div> -->
+
+<div class="card-container">
+    <div class="card">
+        <neu-directed-graph [data]="directedGraphData"></neu-directed-graph>
+    </div>
 </div>
