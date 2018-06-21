@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { NeuChartsModule } from './modules/neu-charts/neu-charts.module';
+// import { NeuMapsModule } from './modules/neu-maps/neu-maps.module';
+import { NeuGraphModule } from './modules/neu-graph/neu-graph.module';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { NeuChartsModule } from './modules/neu-charts/neu-charts.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    NeuChartsModule
+    NeuChartsModule,
+    // NeuMapsModule,
+    NeuGraphModule
   ],
   providers: [],
   bootstrap: [AppComponent]

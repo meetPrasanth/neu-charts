@@ -56,7 +56,7 @@ export var multi = [
                 //   "max": 8000000
             },
             {
-                "name": "2011",
+                "name": "2014",
                 "value": 8940000,
                 //   "min": 7000000,
                 //   "max": 9000000
@@ -390,3 +390,136 @@ export var dataBubble2 = [
 ];
 
 export var bExample = [{"name":"Sub-Saharan Africa","series":[{"name":"27488820.029999997","x":27488820.029999997,"y":12183211.399999999}]},{"name":"Europe","series":[{"name":"22285993.48","x":22285993.48,"y":11082938.63}]},{"name":"Asia","series":[{"name":"15233245.149999999","x":15233245.149999999,"y":6113845.87}]},{"name":"Australia and Oceania","series":[{"name":"9372105.1","x":9372105.1,"y":4722160.029999999}]},{"name":"Middle East and North Africa","series":[{"name":"8291514.720000001","x":8291514.720000001,"y":5761191.859999999}]},{"name":"Central America and the Caribbean","series":[{"name":"6323477.6400000015","x":6323477.6400000015,"y":2846907.85}]},{"name":"North America","series":[{"name":"4185413.79","x":4185413.79,"y":1457942.7599999998}]}];
+
+
+
+
+export var dateMulti = [
+    {
+        "name": "Germany",
+        "series": [
+            {
+                "name": "2000/11/01",
+                "value": 5000000,
+                //   "min": 6000000,
+                //   "max": 8000000
+            },
+            {
+                "name": "2001/05/01",
+                "value": 8940000,
+                //   "min": 7000000,
+                //   "max": 9000000
+            },
+            {
+                "name": "2002/12/01",
+                "value": 7200000,
+                //   "min": 6000000,
+                //   "max": 8000000
+            },
+            {
+                "name": "2004/11/01",
+                "value": 8140000,
+                //   "min": 7000000,
+                //   "max": 9000000
+            }
+        ]
+    },
+
+    // {
+    //     "name": "USA",
+    //     "series": [
+    //         {
+    //             "name": "2010",
+    //             "value": 7870000
+    //         },
+    //         {
+    //             "name": "2014",
+    //             "value": 8270000
+    //         },
+    //         // {
+    //         //   "name": "2012",
+    //         //   "value": 7300000
+    //         // },
+    //         // {
+    //         //   "name": "2013",
+    //         //   "value": 8940000
+    //         // }
+    //     ]
+    // },
+
+    // {
+    //     "name": "France",
+    //     "series": [
+    //         {
+    //             "name": "2010",
+    //             "value": 5000002
+    //         },
+    //         {
+    //             "name": "2011",
+    //             "value": 5800000
+    //         },
+    //         {
+    //             "name": "2012",
+    //             "value": 7300000
+    //         },
+    //         {
+    //             "name": "2013",
+    //             "value": 8940000
+    //         }
+    //     ]
+    // }
+];
+
+
+export var directedGraphData = {
+    'links': [
+        {
+            source: 'start',
+            target: '1',
+            label: 'links to'
+        }, {
+            source: 'start',
+            target: '2'
+        }, {
+            source: '1',
+            target: '3',
+            label: 'related to'
+        }, {
+            source: '2',
+            target: '4'
+        }, {
+            source: '2',
+            target: '6'
+        },{
+            source: '2',
+            target: '5'
+        }, {
+            source: '3',
+            target: '5'
+        }
+    ],
+    'nodes': [
+        {
+            id: 'start',
+            label: 'Start'
+        }, {
+            id: '1',
+            label: 'Query ThreatConnect',
+        }, {
+            id: '2',
+            label: 'Query XForce',
+        }, {
+            id: '3',
+            label: 'Format Results'
+        }, {
+            id: '4',
+            label: 'Search Splunk'
+        }, {
+            id: '5',
+            label: 'Block LDAP'
+        }, {
+            id: '6',
+            label: 'Email Results'
+        }
+    ]
+};
