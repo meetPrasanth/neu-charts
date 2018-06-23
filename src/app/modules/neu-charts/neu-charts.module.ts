@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { NgxGraphModule } from '@swimlane/ngx-graph';
 
 import { NeuChartsComponent } from './neu-charts.component';
 import { PieChartComponent } from './components/pie/pie-chart/pie-chart.component';
@@ -26,6 +27,7 @@ import { BarLineWrapperComponent } from './components/combo/bar-line/bar-line-wr
 import { BarLineComponent } from './components/combo/bar-line/bar-line.component';
 import { BarSeriesComboComponent } from './components/combo/bar-line/bar-series.component';
 import { BubbleComponent } from './components/scatter/bubble/bubble.component';
+import { DirectedGraphComponent } from './components/directed-graph/directed-graph.component';
 
 let PIECOMPONENTS = [PieChartComponent, DonutChartComponent, DonutAdvancedComponent, DonutGridComponent];
 let BARCOMPONENTS = [BarVerticalComponent, BarHorizontalComponent, BarVerticalGroupedComponent, BarHorizontalGroupedComponent,
@@ -33,13 +35,13 @@ let BARCOMPONENTS = [BarVerticalComponent, BarHorizontalComponent, BarVerticalGr
 let LINEORAREACOMPONENTS = [LineComponent, AreaComponent, AreaStackedComponent, AreaNormalizedComponent];
 let MAPCOMPONENTS = [HeatComponent, TreeComponent];
 let COMBOCOMPONENT = [BarLineWrapperComponent, BarLineComponent, BarSeriesComboComponent];
-
 let SCATTERCOMPONENT = [BubbleComponent];
-
+let GRAPHCOMPONENT = [DirectedGraphComponent];
 @NgModule({
     imports: [
         CommonModule,
-        NgxChartsModule
+        NgxChartsModule,
+        NgxGraphModule
     ],
     declarations: [NeuChartsComponent, NoDataComponent,
         ...PIECOMPONENTS,
@@ -47,7 +49,8 @@ let SCATTERCOMPONENT = [BubbleComponent];
         ...LINEORAREACOMPONENTS,
         ...MAPCOMPONENTS,
         ...COMBOCOMPONENT,
-        ...SCATTERCOMPONENT
+        ...SCATTERCOMPONENT,
+        ...GRAPHCOMPONENT
     ],
     exports: [
         ...PIECOMPONENTS,
@@ -55,7 +58,8 @@ let SCATTERCOMPONENT = [BubbleComponent];
         ...LINEORAREACOMPONENTS,
         ...MAPCOMPONENTS,
         ...COMBOCOMPONENT,
-        ...SCATTERCOMPONENT
+        ...SCATTERCOMPONENT,
+        ...GRAPHCOMPONENT
     ]
 })
 export class NeuChartsModule { }
